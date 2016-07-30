@@ -1,0 +1,77 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    text-align:left;
+    margin-bottom: 10px;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -25px;
+    padding: 0 0 20px 0;
+}
+
+#footer {
+    height: 25px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.container { 
+    padding: 0;
+    margin: 0 auto;
+    width: 256px;
+}
+
+.btn-group {
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: large;
+    margin: 10px 0 5px 0;
+}
+
+
+#main_display { 
+   text-align: center;
+    margin-bottom: 20px;
+    background-color: #dddddd;
+}
+
+#visual {
+    display: block;
+    background-color: #000000;
+    margin: 0 auto;
+}
+
+#timer {
+    background-color: #000000;
+    margin: 0;
+}
+
+#record_timer {
+    width: 0%;
+    height: 20px;
+    background-color: #000000;
+}
+
+#timeline {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+#timeline li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#timeline li.record {
+    margin-bottom: 8px;
+}

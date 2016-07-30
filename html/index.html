@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transcript Demo (with node.js + Cloud Speech API)</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <a href="https://github.com/dmiyakawa/webrec_demo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+      <div class="container">
+        <div id="header"> 
+          <h1>Transcript Demo (with node.js + Cloud Speech API)</h1>
+        </div>
+        <div id="main_display">
+          <canvas id="visual" width="256" height="256"></canvas>
+          <div id="timer">
+            <div id="record_timer"></div>
+          </div>
+        </div>
+        <p>
+          Japanese only (日本語しか認識しません)
+        </p>
+        <ul id="timeline">
+        </ul>
+      </div>
+      <div id="footer">
+        <p>
+          Author: Daisuke Miyakawa (@amedama, 2016-07) 
+        </p>
+        <p>
+          License: Apache2
+        </p>
+        <p>
+          Source: <a href="https://github.com/dmiyakawa/rec_and_translate_demo">https://github.com/dmiyakawa/rec_and_translate_demo</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://example.com:12443/socket.io/socket.io.js"></script>
+    <script src="js/recorder.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function() {
+        Main.init(location.hostname, 12443);
+      });
+    </script>
+  </body>
+</html>
